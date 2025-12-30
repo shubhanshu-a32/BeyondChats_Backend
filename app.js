@@ -24,7 +24,7 @@ app.use("/api/articles", articleRoutes);
 
 const port = process.env.PORT || 4000;
 if (process.env.NODE_ENV !== 'production') {
-  app.listen(port, '0.0.0.0', () => console.log(`🚀 Server is running on port ${port}`));
+  app.listen(port, () => console.log(`🚀 Server is running on port ${port}`));
 }
 
 module.exports = app;
